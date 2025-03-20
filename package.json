@@ -10,6 +10,8 @@
     "appium-uiautomator2-driver": "^4.1.0"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "appium:server": "appium --base-path /wd/hub --relaxed-security",
+    "wdio:local": "wdio run ./wdio.conf.local.ts",
+    "wdio:remote": "wdio run ./wdio.conf.remote.ts"
   }
 }
